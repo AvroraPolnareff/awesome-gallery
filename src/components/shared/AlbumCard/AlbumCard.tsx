@@ -4,18 +4,18 @@ import styled from "styled-components";
 
 export interface AlbumCardProps {
   title: string;
-  imageSrc: string;
+  cover: url;
   count: number;
 }
 
 export const AlbumCard: FC<AlbumCardProps> = (props) => {
   return (
     <StyledAlbumCard>
-      <Image src={props.imageSrc}/>
+      <Image src={props.cover} alt=""/>
       <Bottom>
         <Title>{props.title}</Title>
         <Info>
-          <span>photos count: {props.count}</span>
+          <span>photos count: {props.count.toString()}</span>
         </Info>
       </Bottom>
     </StyledAlbumCard>
@@ -32,7 +32,7 @@ const Image = styled.img`
 const StyledAlbumCard = styled.section`
   display: flex;
   flex-direction: column;
-  width: 20em;
+  max-width: 20em;
   /*border: 1px solid ${({theme}) => theme.colors.borders};*/
   border-radius: 0.25em;
   

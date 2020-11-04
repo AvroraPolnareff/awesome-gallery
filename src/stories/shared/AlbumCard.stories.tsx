@@ -13,7 +13,7 @@ const Template: Story<AlbumCardProps> = (args) => <Wrapper><AlbumCard {...args} 
 
 export const Default = Template.bind({})
 Default.args = {
-  imageSrc: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+  cover: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
   title: "Forest",
   count: 30
 }
