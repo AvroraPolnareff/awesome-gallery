@@ -6,6 +6,12 @@ declare module 'styled-components' {
       primary: string;
       secondary: string;
       borders: string;
+    },
+    breakpoints: {
+      sm: string,
+      md: string,
+      lg: string,
+      xl: string,
     }
   }
 }
