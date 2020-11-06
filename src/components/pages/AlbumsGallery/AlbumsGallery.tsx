@@ -19,7 +19,7 @@ export const AlbumsGallery: FC = () => {
     <StyledAlbumsGallery>
       {!error ? (
         albums.map(({ id: albumId, title, photos }) => (
-          <Link
+          <StyledLink
             key={albumId}
             to={`/albums/${albumId}/photos`}
             style={{ textDecoration: "none" }}
@@ -29,7 +29,7 @@ export const AlbumsGallery: FC = () => {
               cover={photos[0].url}
               count={photos.length}
             />
-          </Link>
+          </StyledLink>
         ))
       ) : (
         <div>
@@ -43,8 +43,16 @@ export const AlbumsGallery: FC = () => {
 const StyledAlbumsGallery = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
-  & > * + * {
+  & > * {
     margin: 0.3em;
   }
+`;
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+        color: ${({theme}) => theme.colors.black};
+    }
 `;
