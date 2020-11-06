@@ -1,6 +1,6 @@
-import 'styled-components'
+import "styled-components";
 
-declare module 'styled-components' {
+declare module "styled-components" {
   export interface DefaultTheme {
     colors: {
       white: string;
@@ -8,12 +8,12 @@ declare module 'styled-components' {
       primary: string;
       secondary: string;
       borders: string;
-    },
+    };
     breakpoints: {
-      sm: string,
-      md: string,
-      lg: string,
-      xl: string,
-    }
+      sm: string;
+      md: string;
+      lg: string;
+      xl: string;
+    };
   }
 }

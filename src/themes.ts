@@ -1,4 +1,4 @@
-import {DefaultTheme} from "styled-components";
+import { DefaultTheme } from "styled-components";
 
 export const theme: DefaultTheme = {
   colors: {
@@ -6,12 +6,12 @@ export const theme: DefaultTheme = {
     secondary: "#303030",
     borders: "#303030",
     black: "#000000",
-    white: "#ffffff"
+    white: "#ffffff",
   },
   breakpoints: {
-    sm: '576px',
-    md: '768px',
-    lg: '992px',
-    xl: '1200px',
-  }
-}
+    sm: "576px",
+    md: "768px",
+    lg: "992px",
+    xl: "1200px",
+  },
+};
