@@ -1,5 +1,6 @@
 # React Gallery
 ## Демо
+https://avrorapolnareff.github.io/awesome-gallery
 
 ## Задача
 Тебе необходимо разработать веб-приложение на React, представляющее из себя простую фотогалерею.
