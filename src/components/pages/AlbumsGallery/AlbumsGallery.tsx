@@ -42,10 +42,9 @@ export const AlbumsGallery: FC = () => {
 
 const StyledAlbumsGallery = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  & > * {
-    margin: 0.3em;
-  }
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  justify-items: center;
+  grid-row-gap: 0.6em;
 `;
 
 const StyledLink = styled(Link)`
