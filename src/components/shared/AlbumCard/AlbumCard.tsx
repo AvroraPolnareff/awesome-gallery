@@ -45,8 +45,13 @@ const Bottom = styled.div`
 `;
 const Title = styled.h2`
   margin: 0.2em auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 const Info = styled.div`
+  padding-top: 1em;
   text-align: right;
+  
 `;
