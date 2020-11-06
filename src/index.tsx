@@ -28,7 +28,9 @@ const render = () => {
 
 render();
 
-if (process.env.NODE_ENV === "development" && module.hot) {
+// @ts-ignore
+if (process.env.NODE_ENV === "development" && module["hot"]) {
+  // @ts-ignore
   module.hot.accept("./app/App", render);
 }
 
